@@ -40,6 +40,8 @@ body{
     width: 85%;
 }
 
+/* /////  Header Section Start ------------------- */
+
 .header_section .nav_bar{
     width: 85%;
     height: 50px;
@@ -165,9 +167,10 @@ body{
     width: 100%;
     position: absolute;
 }
+/* /////  Header Section End ------------------- */
 
 
-
+/* /////  Service Section Start ------------------- */
 .service_section{
     padding:10px 0px 60px 0px;
 }
@@ -252,9 +255,10 @@ body{
     font-size: 18px;
     line-height: 1.8;
 }
+/* /////  Service Section End ------------------- */
 
 
-
+/* /////  Gallary Section Start ------------------- */
 .gallary_section{
     padding:10px 0px 60px 0px;
 }
@@ -338,9 +342,10 @@ body{
 .gallary_section .gallary .gallary_item  .item_button:hover{
     background: #17997ad6;
 }
+/* /////  Gallary Section Start ------------------- */
 
 
-
+/* /////  Artical Section Start ------------------- */
 .artical_section{
     padding:10px 0px 60px 0px;
 }
@@ -393,9 +398,6 @@ body{
     width: 100%;
 }
 
-
-
-
 .artical_section .button_bar{
     width: 50%;
     height: auto;
@@ -437,10 +439,10 @@ body{
 .artical_section .button_bar .button:hover svg{
     right: 25px;
 }
+/* /////  Artical Section End ------------------- */
 
 
-
-
+/* /////  Contact Section Start ------------------- */
 .contact_section{
     padding:10px 0px 60px 0px;
 }
@@ -515,7 +517,11 @@ body{
     margin-right: 30px;
     margin-bottom: 20px;
 }
+/* /////  Contact Section End ------------------- */
 
+
+
+/* /////  Footer Section Start ------------------- */
 .footer .footer_content{
     width: 600px;
     margin: 0 auto;
@@ -553,4 +559,139 @@ body{
     text-align: center;
     margin-bottom: 50px;
 }
+/* /////  Footer Section End ------------------- */
 
+
+/* /////  Scroll To Top Start ------------------- */
+.scroll_to_top{
+    width: 60px;
+    height: 60px;
+    background: #f5deb3d1;
+    border-radius: 50%;
+    border: 1px solid var(--color-main);
+    position: fixed;
+    right: 28px;
+    bottom: 60px;
+    font-size: 30px;
+    color: var(--color-main);
+    opacity: 80%;
+    cursor: pointer;
+    display: none;
+}
+.scroll_to_top svg{
+    padding: 15px;
+}
+.scroll_to_top:hover{
+    opacity: 100%;
+}
+/* /////  Scroll To Top End ------------------- */
+
+
+/* /////  Artical Page Start ------------------- */
+.artical_page {
+    margin-top: 100px;
+    padding: 40px 0px;
+    min-height: 100vh;
+}
+.artical_page .artical_bar{
+    width: 65%;
+    display: inline-block;
+}
+.artical_page .artical_bar .artical{
+    padding: 0px 0px 0px 8px;
+    border-left: 2px solid var(--color-main);
+    margin: 25px 0px;
+}
+.artical_page .artical_bar .artical .date{
+    font-size: 18px;
+    letter-spacing: 2px;
+    color: #818181;
+}
+.artical_page .artical_bar .artical .artical_content{
+    padding: 12px 0px 6px 0px;
+    font-size: 18px;
+    line-height: 1.5;
+    font-family: inherit;
+    color: var(--color-smart-black);
+}
+
+
+.artical_page .artical_bar .artical .artical_views .see_more{
+    text-decoration: none;
+    display: inline-block;
+    width: 70px;
+    border: 1px solid;
+    padding: 6px 15px;
+    border-radius: 30px;
+    background: var(--color-main);
+    color: white;
+    text-align: center;
+    font-size: 16px;
+}
+
+
+.artical_page .artical_bar .artical .artical_views p{
+    width: 60px;
+    float: right;
+    padding: 5px 15px;
+    border-radius: 30px;
+    outline: 2px solid var(--color-main);
+    color: var(--color-main);
+    text-align: right;
+    font-size: 15px;
+    position: relative;
+    margin-right: 10px;
+}
+
+.artical_page .artical_bar .artical .artical_views p .iconify{
+    position: absolute;
+    left: 12px;
+    font-size: 20px;
+    top: 3px;
+}
+
+
+
+.artical_page .quote_bar{
+    width: 30%;
+    float: right;
+    display: grid;
+    justify-content: space-around;
+}
+.artical_page .quote_bar .quote{
+    width: 270px;
+    height: 200px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    text-align: center;
+    position: relative;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    box-shadow: -3px 5px 12px -3px #8aa9a7;
+}
+
+
+.artical_page .quote_bar .quote:nth-child(1){
+    background-color: #f5deb3;
+    opacity: 1;
+    background-image:  linear-gradient(#c8c8c8 1.2000000000000002px, transparent 1.2000000000000002px), linear-gradient(to right, #c8c8c8 1.2000000000000002px, #f5deb3 1.2000000000000002px);
+    background-size: 24px 24px;
+}
+.artical_page .quote_bar .quote:nth-child(2){
+    background-color: #f5deb3;
+    opacity: 1;
+    background-size: 12px 12px;
+    background-image: repeating-linear-gradient(45deg, #aed2b1 0, #aed2b1 1.2000000000000002px, #f5deb3 0, #f5deb3 50%);
+}
+.artical_page .quote_bar .quote:nth-child(3){
+    background-color: #f5deb3;
+    opacity: 0.8;
+    background-size: 20px 20px;
+    background-image:  repeating-linear-gradient(to right, #afafaf, #afafaf 1px, #f5deb3 1px, #f5deb3);
+}
+.artical_page .quote_bar .quote p{
+    font-size: 18px;
+    padding: 20px;
+}
+/* /////  Artical Page End ------------------- */
