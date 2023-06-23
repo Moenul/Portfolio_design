@@ -14,6 +14,12 @@ $(document).ready(function(){
      });
 
 
+    $(".nav_button").click(function() {
+        $(this).toggleClass('nav_button_active');
+        $(".nav_list").toggleClass('nav_list_active');
+     });
+
+
 
 
 
