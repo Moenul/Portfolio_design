@@ -1,6 +1,7 @@
 *{
 	margin: 0;
 	padding: 0;
+    cursor: none;
 }
 @font-face {
     font-family: "Atkinson-Hyperlegible-Bold";
@@ -34,6 +35,52 @@ body{
     height: 100%;
     overflow: hidden;
 }
+
+/* ------------------------
+Custom Cursor 
+-------------------------*/
+.cursor {
+width: 50px;
+height: 50px;
+border-radius: 100%;
+border: 1px solid var(--color-main);
+transition: all 200ms ease-out;
+position: fixed;
+pointer-events: none;
+left: 0;
+top: 0;
+transform: translate(calc(-50% + 15px), -50%);
+z-index: 9999;
+}
+
+.cursor2 {
+width: 20px;
+height: 20px;
+border-radius: 100%;
+background-color: var(--color-main);
+opacity: .5;
+position: fixed;
+transform: translate(-50%, -50%);
+pointer-events: none;
+transition: width .3s, height .3s, opacity .3s;
+z-index: 9999;
+}
+
+.hover {
+background-color: wheat;
+opacity: 0.5;
+}
+
+.cursorinnerhover {
+width: 50px;
+height: 50px;
+opacity: .5;
+}
+/* ------------------------
+Custom Cursor 
+-------------------------*/
+
+
 /* @media screen and (max-width: 1300px){
 body {
     min-width: 100%;
